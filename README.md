@@ -1,5 +1,5 @@
 # javaee8-war-archetype
-Archetype to create a java EE 8 project.
+Archetype to create a java EE 8 project as a EAR.
 
 ## Install
 
