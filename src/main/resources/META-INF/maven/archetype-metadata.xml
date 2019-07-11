@@ -1,0 +1,56 @@
+
+<archetype-descriptor name="my-custom-archetype">
+
+  
+    <modules>
+        <module id="${rootArtifactId}-war" dir="__rootArtifactId__-war" name="${rootArtifactId}-war">
+        	 <fileSets>
+	        		<fileSet filtered="true" packaged="true">
+	            		<directory>src/main/java</directory>
+	            		<includes>
+	                		<include>**/*.java</include>
+		            </includes>
+		        </fileSet>
+		        <fileSet filtered="true" encoding="UTF-8">
+		            <directory>src/main/webapp/WEB-INF/</directory>
+		            <includes>
+		                <include>**/*.xml</include>
+		            </includes>
+		        </fileSet>
+		       
+		        
+	    	</fileSets>
+        </module>
+        <module id="${rootArtifactId}-ejb" dir="__rootArtifactId__-ejb" name="${rootArtifactId}-ejb">
+        	 <fileSets>
+	        		<fileSet filtered="true" packaged="true">
+	            		<directory>src/main/java</directory>
+	            		<includes>
+	                		<include>**/*.java</include>
+		            </includes>
+		        </fileSet>
+		        <fileSet filtered="true" encoding="UTF-8">
+		            <directory>src/main/resources/META-INF/</directory>
+		            <includes>
+		                <include>**/*.xml</include>
+		            </includes>
+		        </fileSet>
+		        
+		        
+	    	</fileSets>
+        </module>
+        <module id="${rootArtifactId}-ear" dir="__rootArtifactId__-ear" name="${rootArtifactId}-ear">
+           	 <fileSets>
+           		<fileSet filtered="true" encoding="UTF-8">
+		            <directory>src/main/resources/META-INF/</directory>
+		            <includes>
+		                <include>**/*.xml</include>
+		            </includes>
+		        </fileSet>
+		      </fileSets>
+        </module>
+        <!-- <module name="sub-module-2"></module> -->
+    </modules>
+  
+  
+</archetype-descriptor>
