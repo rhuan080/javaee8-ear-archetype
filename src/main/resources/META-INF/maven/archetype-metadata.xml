@@ -42,7 +42,7 @@
         <module id="${rootArtifactId}-ear" dir="__rootArtifactId__-ear" name="${rootArtifactId}-ear">
            	 <fileSets>
            		<fileSet filtered="true" encoding="UTF-8">
-		            <directory>src/main/resources/META-INF/</directory>
+		            <directory>src/main/application/META-INF/</directory>
 		            <includes>
 		                <include>**/*.xml</include>
 		            </includes>
