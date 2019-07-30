@@ -1,0 +1,8 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.1">
+
+    <deployment></deployment>
+
+    <sub-deployment name="${rootArtifactId}-war-1.0-SNAPSHOT.war"></sub-deployment>
+    <sub-deployment name="${rootArtifactId}-ejb-1.0-SNAPSHOT.jar"></sub-deployment>
+
+</jboss-deployment-structure>
